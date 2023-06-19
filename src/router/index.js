@@ -1,9 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
+import Applications from "../views/Applications.vue";
+import Application from "../views/Application.vue";
 import Tables from "../views/Tables.vue";
 import Billing from "../views/Billing.vue";
 import VirtualReality from "../views/VirtualReality.vue";
-import RTL from "../views/Rtl.vue";
+import Programmes from "../views/Programmes.vue";
+import Programme from "../views/Programme.vue";
 import Profile from "../views/Profile.vue";
 import Signup from "../views/Signup.vue";
 import Signin from "../views/Signin.vue";
@@ -12,12 +15,22 @@ const routes = [
   {
     path: "/",
     name: "/",
-    redirect: "/dashboard-default",
+    redirect: "/dashboard",
   },
   {
-    path: "/dashboard-default",
+    path: "/dashboard",
     name: "Dashboard",
     component: Dashboard,
+  },
+  {
+    path: "/applications",
+    name: "Applications",
+    component: Applications,
+  },
+  {
+    path: "/application/:id",
+    name: "Application",
+    component: Application,
   },
   {
     path: "/tables",
@@ -35,9 +48,14 @@ const routes = [
     component: VirtualReality,
   },
   {
-    path: "/rtl-page",
-    name: "RTL",
-    component: RTL,
+    path: "/programmes",
+    name: "Programmes",
+    component: Programmes,
+  },
+  {
+    path: "/programme/:id",
+    name: "Programme",
+    component: Programme,
   },
   {
     path: "/profile",

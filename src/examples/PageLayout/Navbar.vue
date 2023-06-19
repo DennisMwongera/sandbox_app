@@ -4,12 +4,12 @@
     class="navbar navbar-expand-lg top-0 z-index-3 position-absolute mt-4"
     :class="isBlur ? isBlur : 'shadow-none my-2 navbar-transparent w-100'"
   >
-    <div class="container ps-2 pe-0">
+    <div class="container ps-2 pe-0 text-">
       <router-link
-        class="navbar-brand font-weight-bolder ms-lg-0 ms-3"
+        class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-black"
         :class="darkMode ? 'text-black' : 'text-white'"
         to="/"
-        >Argon Dashboard 2</router-link
+        >OI Sandbox</router-link
       >
       <button
         class="shadow-none navbar-toggler ms-2"
@@ -27,7 +27,7 @@
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navigation">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto text-dark" style="color: black;">
           <li class="nav-item">
             <router-link
               class="nav-link d-flex align-items-center me-2 active"
@@ -79,7 +79,7 @@
               href="https://www.creative-tim.com/product/vue-argon-dashboard"
               class="btn btn-sm mb-0 me-1"
               :class="isBtn"
-              >Free download</a
+              ></a
             >
           </li>
         </ul>

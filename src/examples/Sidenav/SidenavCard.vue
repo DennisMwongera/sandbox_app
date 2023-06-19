@@ -1,5 +1,6 @@
 <template>
-  <div
+  <html></html>
+  <!-- <div
     v-show="this.$store.state.layout !== 'landing'"
     class="card card-plain shadow-none"
     id="sidenavCard"
@@ -48,7 +49,7 @@
       class="mb-3 btn btn-success btn-sm w-100"
       >Upgrade to pro</a
     >
-  </div>
+  </div> -->
 </template>
 <script>
 import img from "../../assets/img/illustrations/icon-documentation.svg";

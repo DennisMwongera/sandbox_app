@@ -121,39 +121,35 @@ export default {
   props: {
     cardTitle: {
       type: String,
-      default: "Categories",
+      default: "Applications",
     },
     title: {
       type: String,
-      default: "Devices",
+      default: "Sabasi Application",
     },
     title2: {
       type: String,
-      default: "Tickets",
+      default: "Open County",
     },
     title3: {
       type: String,
-      default: "Error logs",
+      default: "ERP",
     },
     title4: {
       type: String,
-      default: "Happy Users",
-    },
-    titleDesc: {
-      type: String,
-      default: "250 in stock",
+      default: "Maono",
     },
     titleDesc2: {
       type: String,
-      default: "346+ sold",
+      default: "Data Collection Tool, Data Analyzing Tool and Representation",
     },
     title2Desc: {
       type: String,
-      default: "123 closed",
+      default: "County Data Reports",
     },
     title4Desc: {
       type: String,
-      default: "+ 430",
+      default: "Collaboration Space",
     },
     title2Desc2: {
       type: String,
@@ -161,7 +157,7 @@ export default {
     },
     title3Desc: {
       type: String,
-      default: "1 is active",
+      default: "Open INstitute Resource Management",
     },
     title3Desc2: {
       type: String,

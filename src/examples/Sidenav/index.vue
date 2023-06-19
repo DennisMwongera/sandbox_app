@@ -1,7 +1,7 @@
 <template>
   <div
     v-show="this.$store.state.layout === 'default'"
-    class="min-height-300 position-absolute w-100"
+    class="min-height-100 position-absolute w-100"
     :class="`${this.$store.state.darkMode ? 'bg-transparent' : 'bg-success'}`"
   />
   <aside
@@ -26,16 +26,11 @@
       ></i>
       <router-link class="m-0 navbar-brand" to="/">
         <img
-          :src="
-            this.$store.state.darkMode ||
-            this.$store.state.sidebarType === 'bg-default'
-              ? logoWhite
-              : logo
-          "
+          src=""
           class="navbar-brand-img h-100"
-          alt="main_logo"
+          alt=""
         />
-        <span class="ms-2 font-weight-bold me-2">Argon Dashboard 2</span>
+        <span class="ms-2 font-weight-bold me-2">OI Sandbox</span>
       </router-link>
     </div>
     <hr class="mt-0 horizontal dark" />

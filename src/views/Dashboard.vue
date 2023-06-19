@@ -1,5 +1,5 @@
 <template>
-  <div class="py-4 container-fluid">
+  <div class="py-4 mt-5 container-fluid">
     <div class="row">
       <div class="col-lg-12">
         <div class="row">
@@ -65,40 +65,40 @@
             <div class="card">
               <div class="p-3 pb-0 card-header">
                 <div class="d-flex justify-content-between">
-                  <h6 class="mb-2">Sales by Country</h6>
+                  <h6 class="mb-2">Recent Campaigns</h6>
                 </div>
               </div>
               <div class="table-responsive">
                 <table class="table align-items-center">
                   <tbody>
-                    <tr v-for="(sale, index) in sales" :key="index">
+                    <tr>
                       <td class="w-30">
                         <div class="px-2 py-1 d-flex align-items-center">
                           <div>
-                            <img :src="sale.flag" alt="Country flag" />
+                            <img />
                           </div>
                           <div class="ms-4">
-                            <p class="mb-0 text-xs font-weight-bold">Country:</p>
-                            <h6 class="mb-0 text-sm">{{ sale.country }}</h6>
+                            <p class="mb-0 text-xs font-weight-bold">Name:</p>
+                            <h6 class="mb-0 text-sm">{{  }}</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="mb-0 text-xs font-weight-bold">Sales:</p>
-                          <h6 class="mb-0 text-sm">{{ sale.sales }}</h6>
+                          <p class="mb-0 text-xs font-weight-bold">Department:</p>
+                          <h6 class="mb-0 text-sm">{{  }}</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="mb-0 text-xs font-weight-bold">Value:</p>
-                          <h6 class="mb-0 text-sm">{{ sale.value }}</h6>
+                          <p class="mb-0 text-xs font-weight-bold">Posts:</p>
+                          <h6 class="mb-0 text-sm">{{  }}</h6>
                         </div>
                       </td>
                       <td class="text-sm align-middle">
                         <div class="text-center col">
-                          <p class="mb-0 text-xs font-weight-bold">Bounce:</p>
-                          <h6 class="mb-0 text-sm">{{ sale.bounce }}</h6>
+                          <p class="mb-0 text-xs font-weight-bold">Start Data:</p>
+                          <h6 class="mb-0 text-sm">{{  }}</h6>
                         </div>
                       </td>
                     </tr>
@@ -121,10 +121,10 @@ import GradientLineChart from "@/examples/Charts/GradientLineChart.vue";
 import Carousel from "./components/Carousel.vue";
 import CategoriesCard from "./components/CategoriesCard.vue";
 
-import US from "@/assets/img/icons/flags/US.png";
-import DE from "@/assets/img/icons/flags/DE.png";
-import GB from "@/assets/img/icons/flags/GB.png";
-import BR from "@/assets/img/icons/flags/BR.png";
+import sabasi from "../assets/img/sabasi.png";
+import oc from "../assets/img/opencounty.png";
+import nuru from "@/assets/img/nuru_.png";
+import maono from "@/assets/img/maono.png";
 
 export default {
   name: "dashboard-default",
@@ -132,24 +132,24 @@ export default {
     return {
       stats: {
         money: {
-          title: "Today's Money",
-          value: "$53,000",
+          title: "All Applications",
+          value: "",
           percentage: "+55%",
           iconClass: "ni ni-money-coins",
           detail: "since yesterday",
           iconBackground: "bg-gradient-primary",
         },
         users: {
-          title: "Today's Users",
-          value: "2,300",
+          title: "Programmes",
+          value: "",
           percentage: "+3%",
           iconClass: "ni ni-world",
           iconBackground: "bg-gradient-danger",
           detail: "since last week",
         },
         clients: {
-          title: "New Clients",
-          value: "+3,462",
+          title: "Campaigns",
+          value: "",
           percentage: "-2%",
           iconClass: "ni ni-paper-diploma",
           percentageColor: "text-danger",
@@ -157,8 +157,8 @@ export default {
           detail: "since last quarter",
         },
         sales: {
-          title: "Sales",
-          value: "$103,430",
+          title: "Deployed",
+          value: "",
           percentage: "+5%",
           iconClass: "ni ni-cart",
           iconBackground: "bg-gradient-warning",
@@ -171,28 +171,28 @@ export default {
           sales: 2500,
           value: "$230,900",
           bounce: "29.9%",
-          flag: US,
+          flag: sabasi,
         },
         germany: {
           country: "Germany",
           sales: "3.900",
           value: "$440,000",
           bounce: "40.22%",
-          flag: DE,
+          flag: oc,
         },
         britain: {
           country: "Great Britain",
           sales: "1.400",
           value: "$190,700",
           bounce: "23.44%",
-          flag: GB,
+          flag: nuru,
         },
         brasil: {
           country: "Brasil",
           sales: "562",
           value: "$143,960",
           bounce: "32.14%",
-          flag: BR,
+          flag: maono,
         },
       },
     };

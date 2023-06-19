@@ -8,19 +8,17 @@
             :class="this.$store.state.isRTL ? 'text-lg-end' : 'text-lg-start'"
           >
             ©
-            {{ new Date().getFullYear() }}, made with
-            <i class="fa fa-heart"></i> by
+            {{ new Date().getFullYear() }}, product by
             <a
-              href="https://www.creative-tim.com"
+              href="https://www.openinstitute.africa"
               class="font-weight-bold"
               target="_blank"
-              >Creative Tim</a
+              >Open Institute</a
             >
-            for a better web.
           </div>
         </div>
         <div class="col-lg-6">
-          <ul
+          <!-- <ul
             class="nav nav-footer justify-content-center justify-content-lg-end"
           >
             <li class="nav-item">
@@ -55,7 +53,7 @@
                 >License</a
               >
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>

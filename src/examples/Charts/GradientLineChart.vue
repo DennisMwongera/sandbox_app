@@ -25,7 +25,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Sales overview",
+      default: "Users Overtime on Sabasi App",
     },
     detail1: {
       type: String,

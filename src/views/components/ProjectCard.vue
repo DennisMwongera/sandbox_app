@@ -41,7 +41,7 @@
     </div>
     <div class="card-body px-0 pb-2">
       <div class="table-responsive">
-        <table class="table align-items-center mb-0">
+        <!-- <table class="table align-items-center mb-0">
           <thead>
             <tr>
               <th
@@ -64,7 +64,7 @@
                 <div class="d-flex py-1">
                   <div>
                     <img
-                      src="../../assets/img/small-logos/logo-xd.svg"
+                      src=""
                       class="avatar avatar-sm me-3"
                       alt="xd"
                     />
@@ -206,7 +206,6 @@
                 <div class="d-flex py-1">
                   <div>
                     <img
-                      src="../../assets/img/small-logos/logo-slack.svg"
                       class="avatar avatar-sm me-3"
                       alt="team7"
                     />
@@ -267,7 +266,7 @@
                 <div class="d-flex py-1">
                   <div>
                     <img
-                      src="../../assets/img/small-logos/logo-spotify.svg"
+                      src=""
                       class="avatar avatar-sm me-3"
                       alt="spotify"
                     />
@@ -348,7 +347,7 @@
                 <div class="d-flex py-1">
                   <div>
                     <img
-                      src="../../assets/img/small-logos/logo-jira.svg"
+                      src=""
                       class="avatar avatar-sm me-3"
                       alt="jira"
                     />
@@ -399,7 +398,7 @@
                 <div class="d-flex py-1">
                   <div>
                     <img
-                      src="../../assets/img/small-logos/logo-invision.svg"
+                      src=""
                       class="avatar avatar-sm me-3"
                       alt="invision"
                     />
@@ -456,7 +455,7 @@
               </td>
             </tr>
           </tbody>
-        </table>
+        </table> -->
       </div>
     </div>
   </div>
