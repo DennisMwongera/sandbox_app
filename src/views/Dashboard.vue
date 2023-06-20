@@ -71,7 +71,7 @@
               <div class="table-responsive">
                 <table class="table align-items-center">
                   <tbody>
-                    <tr>
+                    <tr v-for="programme in programmes.slice(1,5)" :key="programme.id">
                       <td class="w-30">
                         <div class="px-2 py-1 d-flex align-items-center">
                           <div>
@@ -79,14 +79,14 @@
                           </div>
                           <div class="ms-4">
                             <p class="mb-0 text-xs font-weight-bold">Name:</p>
-                            <h6 class="mb-0 text-sm">{{  }}</h6>
+                            <h6 class="mb-0 text-sm">{{ programme.title }}</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
                           <p class="mb-0 text-xs font-weight-bold">Department:</p>
-                          <h6 class="mb-0 text-sm">{{  }}</h6>
+                          <h6 class="mb-0 text-sm">{{ programme.support_department }}</h6>
                         </div>
                       </td>
                       <td>
@@ -128,6 +128,7 @@ import maono from "@/assets/img/maono.png";
 
 export default {
   name: "dashboard-default",
+  inject: ['$http'],
   data() {
     return {
       stats: {
@@ -195,13 +196,30 @@ export default {
           flag: maono,
         },
       },
+      programmes: []
     };
   },
   components: {
     Card,
     GradientLineChart,
     Carousel,
-    CategoriesCard,
+    CategoriesCard
   },
+  mounted() {
+    this.getProgrammes();
+  },
+  methods: {
+    getProgrammes() {
+      this.$http
+        .get("api/programmes")
+        .then((response) => {
+          this.programmes = response.data.programmes;
+          console.log(this.programmes);
+        })
+        .catch((error) => {
+          this.showError(error);
+        });
+    },
+  }
 };
 </script>
