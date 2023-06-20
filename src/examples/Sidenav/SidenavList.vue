@@ -1,89 +1,34 @@
 <template>
-  <div
-    class="collapse navbar-collapse w-auto h-auto h-100"
-    id="sidenav-collapse-main"
-  >
+  <div class="collapse navbar-collapse w-auto h-auto h-100" id="sidenav-collapse-main">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <sidenav-item
-          url="/dashboard"
-          :class="getRoute() === 'dashboard' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'لوحة القيادة' : 'Dashboard'"
-        >
+        <sidenav-item url="/dashboard" :class="getRoute() === 'dashboard' ? 'active' : ''"
+          :navText="this.$store.state.isRTL ? 'لوحة القيادة' : 'Dashboard'">
           <template v-slot:icon>
             <i class="ni ni-tv-2 text-primary text-lg"></i>
           </template>
         </sidenav-item>
       </li>
       <li class="nav-item">
-        <sidenav-item
-          url="/applications"
-          :class="getRoute() === 'applications' ? 'active' : ''"
-          :navText="this.$store.state.isRTL?  'الجداول' : 'Applications'"
-        >
+        <sidenav-item url="/applications" :class="getRoute() === 'applications' ? 'active' : ''"
+          :navText="this.$store.state.isRTL ? 'الجداول' : 'Applications'">
           <template v-slot:icon>
-            <i
-              class="ni ni-calendar-grid-58 text-warning text-lg"
-            ></i>
-          </template>
-        </sidenav-item>
-      </li>
-      <!-- <li class="nav-item">
-        <sidenav-item
-          url="/tables"
-          :class="getRoute() === 'tables' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'الجداول' : 'Tables'"
-        >
-          <template v-slot:icon>
-            <i
-              class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"
-            ></i>
+            <i class="ni ni-calendar-grid-58 text-warning text-lg"></i>
           </template>
         </sidenav-item>
       </li>
       <li class="nav-item">
-        <sidenav-item
-          url="/billing"
-          :class="getRoute() === 'billing' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'الفواتیر' : 'Billing'"
-        >
-          <template v-slot:icon>
-            <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
-          </template>
-        </sidenav-item>
-      </li>
-      <li class="nav-item">
-        <sidenav-item
-          url="/virtual-reality"
-          :class="getRoute() === 'virtual-reality' ? 'active' : ''"
-          :navText="
-            this.$store.state.isRTL ? 'الواقع الافتراضي' : 'Virtual Reality'
-          "
-        >
-          <template v-slot:icon>
-            <i class="ni ni-app text-info text-sm opacity-10"></i>
-          </template>
-        </sidenav-item>
-      </li>-->
-       <li class="nav-item">
-        <sidenav-item
-          url="/programmes"
-          :class="getRoute() === 'programmes' ? 'active' : ''"
-          navText="Programmes"
-        >
+        <sidenav-item url="/programmes" :class="getRoute() === 'programmes' ? 'active' : ''" navText="Programmes">
           <template v-slot:icon>
             <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
           </template>
         </sidenav-item>
       </li>
     </ul>
+
   </div>
   <div class="pt-3 mx-3 mt-3 sidenav-footer">
-    <sidenav-card
-      :class="cardBg"
-      textPrimary="Need Help?"
-      textSecondary="Please check our docs"
-    />
+    <sidenav-card :class="cardBg" textPrimary="Need Help?" textSecondary="Please check our docs" />
   </div>
 </template>
 <script>
